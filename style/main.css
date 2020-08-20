@@ -10874,4 +10874,23 @@ footer p {
   color: #ffffff;
   margin-left: -10px;
 }
+
+.navbar-fixed-top.scrolled {
+  background-color: #ffffff;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
+}
+
+.pages-home h5 {
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.pages-home .store-trend-categories {
+  margin-top: 30px;
+}
+
+.pages-home .store-new-product {
+  margin-top: 10px;
+}
 /*# sourceMappingURL=main.css.map */
