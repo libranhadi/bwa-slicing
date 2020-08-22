@@ -10964,4 +10964,26 @@ footer p {
   /* identical to box height */
   color: #ff7158;
 }
+
+.store-breadcrumbs .breadcrumb {
+  padding: 10px 0px 10px 0px;
+}
+
+.store-breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
+  padding-left: 1, 5rem;
+  padding-right: 1, 5rem;
+}
+
+.store-breadcrumbs .breadcrumb-item.active {
+  font-weight: 300;
+  color: #0c0d36;
+}
+
+.store-breadcrumbs a {
+  color: #979797;
+}
+
+.store-breadcrumbs a:hover {
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */
