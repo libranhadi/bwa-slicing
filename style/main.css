@@ -10966,6 +10966,7 @@ footer p {
 }
 
 .store-breadcrumbs .breadcrumb {
+  background-color: transparent;
   padding: 10px 0px 10px 0px;
 }
 
@@ -10985,5 +10986,39 @@ footer p {
 
 .store-breadcrumbs a:hover {
   text-decoration: none;
+}
+
+.page-details .store-gallery {
+  margin-top: 20px;
+}
+
+.page-details .store-gallery img {
+  border-radius: 10px;
+}
+
+.page-details .store-gallery .thumbnail-image {
+  margin-bottom: 15px;
+  border: 2px solid transparent;
+}
+
+.page-details .store-gallery .thumbnail-image:hover, .page-details .store-gallery .thumbnail-image:active {
+  border: 2px solid #ff7158;
+}
+
+.slide-fade-enter-active {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.slide-fade-leave-active {
+  -webkit-transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-to,
+.slide-fade-leave-to {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+  opacity: 0.5;
 }
 /*# sourceMappingURL=main.css.map */
