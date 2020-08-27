@@ -75,7 +75,8 @@
             </li>
             <li class="nav-item">
               <a class="nav-link d-inline-block mt-2">
-                <img src="/images/icon-cart-empty.svg" alt="cart" />
+                <img src="/images/icon-cart-filled.svg" alt="cart" />
+                <div class="card-badge rounded-circle px-0">3</div>
               </a>
             </li>
           </ul>
@@ -83,14 +84,10 @@
           <!-- navbar mobile -->
           <ul class="navbar-nav d-block d-lg-none">
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                Hi, Jane
-              </a>
+              <a href="#" class="nav-link"> Hi, Jane </a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link d-inline-block">
-                Cart
-              </a>
+              <a href="" class="nav-link d-inline-block"> Cart </a>
             </li>
           </ul>
         </div>
@@ -98,7 +95,7 @@
     </nav>
 
     <!-- page-content -->
-    <div class="page-content page-details">
+    <div class="page-content page-cart">
       <section
         class="store-breadcrumbs"
         data-aos="fade-down"
@@ -119,107 +116,182 @@
           </div>
         </div>
       </section>
-      <section class="page-content page-cart">
-        <div class="store-cart">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 table-responsive">
-                <table class="table table-borderless table-cart">
-                  <thead>
-                    <tr>
-                      <th>image</th>
-                      <th>Name &amp; Seller</th>
-                      <th>Price</th>
-                      <th>Menu</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td style="width: 25;">
-                        <img src="images/product-cart-1.jpg" alt="" />
-                      </td>
-                      <td style="width: 30%;">
-                        <div class="product-title">
-                          Sofa Ternyaman
-                        </div>
-                        <div class="product-subtitle">
-                          By Libran Hadi
-                        </div>
-                      </td>
-                      <td style="width: 20%;">
-                        <div class="product-title">
-                          $800
-                        </div>
-                        <div class="product-subtitle">
-                          USD
-                        </div>
-                      </td>
-                      <td>
-                        <a href="#" class="btn btn-remove-cart">Remove</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="width: 25;">
-                        <img src="images/product-cart-2.jpg" alt="" />
-                      </td>
-                      <td style="width: 30%;">
-                        <div class="product-title">
-                          Sneakers For Ngudag Layangan
-                        </div>
-                        <div class="product-subtitle">
-                          By Libran Hadi
-                        </div>
-                      </td>
-                      <td style="width: 20%;">
-                        <div class="product-title">
-                          $800
-                        </div>
-                        <div class="product-subtitle">
-                          USD
-                        </div>
-                      </td>
-                      <td>
-                        <a href="#" class="btn btn-remove-cart">Remove</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="width: 25;">
-                        <img src="images/product-cart-3.jpg" alt="" />
-                      </td>
-                      <td style="width: 30%;">
-                        <div class="product-title">
-                          Coffee Holder
-                        </div>
-                        <div class="product-subtitle">
-                          By Libran Hadi
-                        </div>
-                      </td>
-                      <td style="width: 20%;">
-                        <div class="product-title">
-                          $800
-                        </div>
-                        <div class="product-subtitle">
-                          USD
-                        </div>
-                      </td>
-                      <td>
-                        <a href="#" class="btn btn-remove-cart">Remove</a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+
+      <section class="store-cart">
+        <div class="container">
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12 table-responsive">
+              <table class="table table-borderless table-cart">
+                <thead>
+                  <tr>
+                    <th>image</th>
+                    <th>Name &amp; Seller</th>
+                    <th>Price</th>
+                    <th>Menu</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="width: 20%">
+                      <img
+                        src="images/product-cart-1.jpg"
+                        alt=""
+                        class="cart-image w-100"
+                      />
+                    </td>
+                    <td style="width: 30%">
+                      <div class="product-title">Sofa Ternyaman</div>
+                      <div class="product-subtitle">By Libran Hadi</div>
+                    </td>
+                    <td style="width: 20%">
+                      <div class="product-title">$800</div>
+                      <div class="product-subtitle">USD</div>
+                    </td>
+                    <td>
+                      <a href="#" class="btn btn-remove-cart">Remove</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25">
+                      <img src="images/product-cart-2.jpg" alt="" />
+                    </td>
+                    <td style="width: 30%">
+                      <div class="product-title">
+                        Sneakers For Ngudag Layangan
+                      </div>
+                      <div class="product-subtitle">By Libran Hadi</div>
+                    </td>
+                    <td style="width: 20%">
+                      <div class="product-title">$800</div>
+                      <div class="product-subtitle">USD</div>
+                    </td>
+                    <td>
+                      <a href="#" class="btn btn-remove-cart">Remove</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: 25">
+                      <img src="images/product-cart-3.jpg" alt="" />
+                    </td>
+                    <td style="width: 30%">
+                      <div class="product-title">Coffee Holder</div>
+                      <div class="product-subtitle">By Libran Hadi</div>
+                    </td>
+                    <td style="width: 20%">
+                      <div class="product-title">$800</div>
+                      <div class="product-subtitle">USD</div>
+                    </td>
+                    <td>
+                      <a href="#" class="btn btn-remove-cart">Remove</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row" data-aos-delay="150" data-aos="fade-up">
+            <div class="col-12">
+              <hr />
+            </div>
+            <div class="col-12">
+              <h5 class="mb-4">Shipping-details</h5>
+            </div>
+          </div>
+          <div class="row mb-4" data-aos-delay="200" data-aos="fade-up">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="">Address 1</label>
+                <input
+                  type="text"
+                  name="addressOne"
+                  id="addressOne"
+                  class="form-control"
+                  value="Setra Duta Cemara"
+                />
               </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="">Address 2</label>
+                <input
+                  type="text"
+                  name="addressOne"
+                  id="addressOne"
+                  class="form-control"
+                  value="Blok B2 No. 34"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="Province">Province</label>
+                <select name="province" id="province" class="form-control">
+                  <option value="">Jawa Barat</option>
+                  <option value="">Jawa Tengah</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="city">City</label>
+                <select name="city" id="city" class="form-control">
+                  <option value="">Bandung</option>
+                  <option value="">Surabaya</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="postalCode">Postal Code</label>
+                <input
+                  type="text"
+                  name="postalCode"
+                  id="postalCode"
+                  class="form-control"
+                  value="2122322"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="">Country</label>
+                <input
+                  type="text"
+                  name="country"
+                  id="country"
+                  class="form-control"
+                  value="Indonesia"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="Mobile">Mobile Phone</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="Mobile"
+                  class="form-control"
+                  value="0812323xxxx"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row" data-aos-delay="250" data-aos="fade-up">
+            <div class="col-12">
+              <h5 class="mb-4">Payment Information</h5>
             </div>
           </div>
         </div>
       </section>
+
       <footer>
         <div class="container">
           <div class="row">
             <div class="col-12 px-4 py-4">
-              <p>
-                2020 Copyright Store All Right Reserved
-              </p>
+              <p>2020 Copyright Store All Right Reserved</p>
             </div>
           </div>
         </div>
