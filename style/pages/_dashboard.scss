@@ -45,6 +45,7 @@
         rgba(255, 255, 255, 0) 100%
       );
       border-right: 4px solid #ff7158;
+      color: #0c0d36;
     }
   }
   //   dekstop
@@ -56,6 +57,38 @@
     #page-content-wrapper {
       min-width: 0;
       width: 100%;
+    }
+  }
+  .section-content {
+    margin-top: 100px;
+
+    h5 {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 36px;
+      /* identical to box height */
+
+      color: #0c0d36;
+    }
+    .dashboard-title {
+      font-weight: 400;
+      font-size: 24px;
+
+      /* identical to box height */
+
+      color: #0c0d36;
+    }
+    .dashboard-subtitle {
+      font-weight: 300;
+      font-size: 16px;
+
+      /* identical to box height */
+
+      color: #9191a9;
+    }
+    @include media-breakpoint-up(md) {
+      margin-top: 30px;
+      margin-left: 20px;
     }
   }
 }
