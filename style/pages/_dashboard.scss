@@ -90,5 +90,19 @@
       margin-top: 30px;
       margin-left: 20px;
     }
+    .nav-pills {
+      .nav-link {
+        font-weight: 500;
+        font-size: 18px;
+
+        color: #9191a9;
+        border-radius: 0;
+        &.active {
+          background: none;
+          border-bottom: 4px solid #0c0d36;
+          color: #0c0d36;
+        }
+      }
+    }
   }
 }
