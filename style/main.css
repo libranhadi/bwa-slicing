@@ -11266,6 +11266,13 @@ footer p {
   color: #0c0d36;
 }
 
+.page-dashboard .section-content .gallery-container .delete-gallery {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+
 .component-categories {
   background-color: #f4f4f4;
   border-radius: 8px;
@@ -11395,6 +11402,22 @@ footer p {
   line-height: 27px;
   /* identical to box height */
   color: #0c0d36;
+}
+
+.card-dashboard-product {
+  margin-bottom: 15px;
+}
+
+.card-dashboard-product .card-body .product-title {
+  font-weight: 200;
+  font-size: 18px;
+  color: #0c0d36;
+}
+
+.card-dashboard-product .card-body .product-category {
+  font-weight: normal;
+  font-size: 16px;
+  color: #c5c5c5;
 }
 
 .slide-fade-enter-active {
