@@ -86,6 +86,35 @@
 
       color: #9191a9;
     }
+    .product-title {
+      font-weight: normal;
+      font-size: 16px;
+
+      margin-top: 15px;
+      color: #c5c5c5;
+      margin-bottom: 0;
+      @include media-breakpoint-up(md) {
+        margin-top: 0;
+        line-height: 24px;
+      }
+    }
+    .product-subtitle {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      /* identical to box height */
+      margin-bottom: 15px;
+      color: #0c0d36;
+    }
+    h5 {
+      font-weight: normal;
+      font-size: 22px;
+      margin-top: 10px;
+      margin-bottom: 0;
+      /* identical to box height */
+
+      color: #0c0d36;
+    }
     @include media-breakpoint-up(md) {
       margin-top: 30px;
       margin-left: 20px;

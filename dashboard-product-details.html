@@ -127,8 +127,8 @@
           <!-- section Content -->
           <div class="section-content section-dashboard-home">
             <div class="container-fluid">
-              <h2 class="dashboard-title">Store Settings</h2>
-              <p class="dashboard-subtitle">Make store that profitable</p>
+              <h2 class="dashboard-title">Shirup Marzan</h2>
+              <p class="dashboard-subtitle">Product Details</p>
               <div class="dashboard-content">
                 <div class="row mt-3">
                   <div class="col-12">
@@ -240,10 +240,17 @@
                             </div>
                           </div>
                           <div class="col-12 mt-3">
-                            <input type="file" name="" id="" />
+                            <input
+                              type="file"
+                              name="file"
+                              id="file"
+                              style="display: none"
+                              multiple
+                            />
                             <button
                               type="submit"
                               class="btn btn-secondary btn-block"
+                              onclick="thisFileUpload()"
                             >
                               ADD PHOTO
                             </button>
@@ -279,5 +286,10 @@
       CKEDITOR.replace("editor");
     </script>
     <script src="/script/navbar-scroll.js"></script>
+    <script>
+      function thisFileUpload() {
+        document.getElementById("file").click();
+      }
+    </script>
   </body>
 </html>
